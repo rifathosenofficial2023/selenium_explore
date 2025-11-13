@@ -5,6 +5,11 @@ import time
 service = Service("D:\Python\Selenium\chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
+driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
-driver.get("https://google.com")
+driver.maximize_window()
+print(driver.title)
+print(driver.current_url)
+
 time.sleep(10)
+
